@@ -1,7 +1,7 @@
 import React, {useState} from 'react';
 import './styles.css';
 import api from '../../services/api';
-import {useHistory} from 'react-router-dom';
+import { useHistory } from 'react-router-dom';
 
 
 import logoImage from '../../assets/login.png';

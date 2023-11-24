@@ -1,6 +1,7 @@
 import React , {useEffect, useState} from 'react';
 import './styles.css';
-import {Link,useHistory , useParams} from 'react-router-dom';
+import {Link, useParams} from 'react-router-dom';
+import { useHistory } from 'react-router-dom';
 import {FiCornerDownLeft, FiUserPlus } from 'react-icons/fi';
 import api from '../../services/api';
 
