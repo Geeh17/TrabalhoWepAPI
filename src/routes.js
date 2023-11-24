@@ -1,17 +1,16 @@
 import React from 'react';
-import { BrowserRouter, Route, Switch } from 'react-router-dom';
-import Login from './pages/Login';
+import { Route, Routes } from 'react-router-dom';
 import Alunos from './pages/Alunos';
-import NovoAluno from './pages/NovoAluno'
+import Login from './pages/Login';
+import NovoAluno from './pages/NovoAluno';
 
-export default function Routes(){
+function Routing() {
     return (
-        <BrowserRouter>
-           <Switch>
-               <Route path="/" exact component={Login}/>
-               <Route path="/alunos" component={Alunos}/>
-               <Route path="/aluno/novo/:alunoId" component={NovoAluno}/>
-            </Switch>
-        </BrowserRouter>    
-    ); 
+        <Routes>
+            <Route path="/" element={<Login />} />
+            <Route path="/alunos" element={<Alunos />} />
+            <Route path="/aluno/novo" element={<NovoAluno />} />
+        </Routes>
+    );
 }
+export default Routing;
